@@ -1,0 +1,28 @@
+<html>
+<head><title>Sorting</title>
+
+<style>
+	p {
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 40px;
+		font-weight: bold;
+		color: #a94242;
+	}
+</style>
+</head>
+<body style=background-color:floralwhite ; topmargin="100"">
+	<center>
+	<p id="unsorted"></p>
+	<p id="sorted"></p>
+	</center>
+<script>
+const h=[79,63,38,64,43,23,70,1,57];
+document.getElementById("unsorted").innerHTML="Unsorted Array: "+h;
+h.sort(function(a,b){return b-a});
+document.getElementById("sorted").innerHTML="Sorted Array: "+h;
+</script>
+
+
+
+</body>
+</html>

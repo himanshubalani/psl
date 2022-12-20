@@ -1,0 +1,65 @@
+<html>
+
+<head>
+	<title>Form</title>
+	<style>
+		body{
+			background-color: floralwhite;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 20px;
+			font-weight: bold;
+			color: #a94242;
+			margin-top: 150px;
+		}
+		input {
+			margin: 10px;
+		}
+		form{
+			margin: auto; width: 500px;
+			align-self: center;
+		}
+	</style>
+</head>
+
+<body>
+	<center>
+		<form name="myform" method="post" onsubmit="return -formvalidate()">
+			Name:<input type="text" id="name"><br>
+			Password: <input type="password" id="password"><br>
+			Mobile No: <input type="text" id="mobile"><br>
+			<br>
+			<input type="submit" value="submit">
+
+	</center>
+
+	<script>
+		function formvalidate() {
+			var name = document.myform.name.value;
+			var password = document.myform.password.value;
+			var mobile = document.myform.mobile.value;
+
+			if (name == null || name == "") {
+				alert("Name can't be blank");
+				return false;
+			}
+			else if (password.length < 6) {
+				alert("password must be at least 6 character long.");
+				return false;
+			}
+			else if (mobile.length < 10) {
+				alert("Mobile must be at least 10 character long.");
+				return false;
+			}
+			else {
+				alert("Form Submitted Successfully!");
+				return false;
+
+			}
+
+
+		}
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Practical 12 </title>
+<style>
+body {
+background-color: azure
+}
+	p {
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 20px;
+	}
+	#btn {
+		font-family: cursive;
+		background-color: aliceblue;
+		color: black;
+		border-radius: 22%;
+		font-size: 30px;
+		width: 150px;
+		height: 150px;
+	}
+</style>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquer
+y.min.js">
+</script>
+</head>
+<body style="text-align:center;">
+<p id="first"> </p>
+<button id="btn" onclick="start()">Show Cookies</button>
+<p id="second"> </p>
+<script>
+var first = document.getElementById("first");
+var second = document.getElementById("second");
+first.innerHTML = "Click on the button to "
++ "get the stored cookies.";
+function getCookies() {
+var cookies = document.cookie.split(';');
+var item = '';
+for (var i = 1; i <= cookies.length; i++) {
+item += i + ' - ' + cookies[i - 1] + "<br>";
+}
+return item;
+}
+function start() {
+second.innerHTML = getCookies();
+}
+</script>
+</body>
+</html>

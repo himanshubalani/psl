@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Are you 18 plus?</title>
+		<style>
+			body{
+				background-color: floralwhite;
+				font-family: Verdana, Geneva, Tahoma, sans-serif;
+				color: #a94242;
+				font-size: large;
+			}
+			input{
+				margin: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<form  style="margin-top: 200px;" name="myform" method="post" onsubmit="return formvalidate()">
+				What is your Age?<input type="text" id="age"><br>
+				<br>
+				<input style="
+				padding:10px;border-radius: 18px;width: 100px; background-color:coral; color: floralwhite; font-weight: bold;"
+				type="submit" value="submit">
+			</form>
+		</center>
+		<script>
+			function formvalidate() {
+				var age = document.myform.age.value;
+				if (age < 18) {
+					alert("You are not authorized to visit this page");
+					return false;
+				}
+				else {
+					alert("Welcome to the page");
+					return false;
+				}
+			}
+		</script>
+</html>

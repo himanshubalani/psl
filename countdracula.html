@@ -1,0 +1,27 @@
+<html>
+	<head><title>Count Dracula</title>
+		<style>
+			body {margin-top: 120px; background-color: cornsilk;}
+		</style>
+	<script type="text/Javascript">
+		function count() {
+			var str=document.getElementById("bigtxt").value;
+			var result= "";
+			var arr=str.split(" ");
+			var a= str.split("\n");
+			result+="Number of characters: "+str.length+'\n';
+			result+="Number of words: "+arr.length+'\n';
+			result+="Number of lines: "+a.length+'\n';
+			alert(result);
+		}
+	</script></head>
+	<body>
+		<center>
+		<form>
+			<textarea rows="30" cols="50" id="bigtxt"></textarea> </br>
+			<input style= "background-color:cornflowerblue; color:darkblue; height:40px; width:390px" 
+			type="button" value="Count" onclick="count()">
+		</form>
+		</center>
+	</body>
+</html>

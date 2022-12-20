@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+	<title>Color Change</title>
+	<style>
+		button {
+			font-family: cursive;			margin-left: 14%;
+			margin-top: 14%;			margin-bottom: 14%;
+			margin-right: 14%;			color: white;
+			border-radius: 22%;			font-size: 30px;
+			width: 150px;			height: 150px;
+		}
+	</style>
+</head>
+	<body>
+		<center>
+			<h1 style="font-family:cursive;">Howdy! Welcome to Willy-Nilly Color Picker </h1>
+		<button id="btn" onclick="changeColor()">Change Color</button>
+		<script>
+			function changeColor() {
+				var color = ["red", "green", "blue", "yellow", "pink", "orange", "purple","hotpink", "brown","cadetblue","chocolate","gold",
+				"greenyelow", "crimson","black","burlywood", "aqua","fuchsia","lime", "maroon", "navy", "olive", "teal"];
+				var randomColor1 = color[Math.floor(Math.random() * color.length)] ;
+				var randomColor2 = color[Math.floor(Math.random() * color.length)];
+				document.body.style.backgroundColor = randomColor1;
+				document.getElementById("btn").style.backgroundColor = randomColor2;
+				
+			}
+		</script>
+</center>
+<footer>
+	<h3 style="font-family:'Courier New'; width:100%; text-align: center ;bottom: 0%;position: fixed;">Code by himanshubalani</h3>
+</footer>
+	</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Online Examination</title>
+    <style>
+        label {
+            font-weight: bold;
+            font-size: 15px;
+            margin: 10px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 10px;
+            margin-left: 50px;
+            padding: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #40086a;
+            background-color: #e5dcff;
+
+        }
+    </style>
+    <script>
+        function markscal() {
+            var i = 0;
+            if (document.qb.one[3].checked)
+                i++;
+            if (document.qb.two[1].checked)
+                i++;
+            if (document.qb.three[0].checked)
+                i++;
+            if (document.qb.four[3].checked)
+                i++;
+            if (document.qb.five[2].checked)
+                i++;
+            if (document.qb.six[2].checked)
+                i++;
+            if (document.qb.seven[1].checked)
+                i++;
+            if (document.qb.eight[0].checked)
+                i++;
+            if (document.qb.nine[1].checked)
+                i++;
+            if (document.qb.ten[2].checked)
+                i++;
+            window.alert("Thankyou you taking Online Exam Your score is " + i + "/10");
+        }
+    </script>
+</head>
+
+<body>
+    <form onsubmit="return markscal()" name="qb">
+        <center>
+            <h1>Welcome To Online Examination</h1>
+        </center> <br>
+
+        <h4>1. What is the maximum length of a Python identifier?</h4>
+        <label for="">
+            <input type="radio" name="one"> 32 </label><br>
+        <label for="">
+            <input type="radio" name="one"> 64 </label><br>
+        <label for="">
+            <input type="radio" name="one"> 128 </label><br>
+        <label for="">
+            <input type="radio" name="one"> No Fixed Length </label><br>
+
+        <br>
+        <h4>2. How is a code block indicated in Python?</h4>
+        <label for="">
+            <input type="radio" name="two"> Brackets </label><br>
+        <label for="">
+            <input type="radio" name="two"> Indentation </label><br>
+        <label for="">
+            <input type="radio" name="two"> Key </label><br>
+        <label for="">
+            <input type="radio" name="two"> None of the above </label><br>
+
+        <br>
+        <h4>3. Which of the following concepts is not a part of Python?</h4>
+        <label for="">
+            <input type="radio" name="three"> Pointers </label><br>
+        <label for="">
+            <input type="radio" name="three"> Loops </label><br>
+        <label for="">
+            <input type="radio" name="three"> Dynamic Typing </label><br>
+        <label for="">
+            <input type="radio" name="three"> All of the Above </label><br>
+
+        <br>
+        <h4>4. Which of the following statements are used in Exception Handling in Python?</h4>
+        <label for="">
+            <input type="radio" name="four"> try </label><br>
+        <label for="">
+            <input type="radio" name="four"> except </label><br>
+        <label for="">
+            <input type="radio" name="four"> finally </label><br>
+        <label for="">
+            <input type="radio" name="four"> All of the above </label><br>
+
+
+        <br>
+        <h4>5. Which of the following types of loops are not supported in Python?</h4>
+        <label for="">
+            <input type="radio" name="five"> for </label><br>
+        <label for="">
+            <input type="radio" name="five"> while </label><br>
+        <label for="">
+            <input type="radio" name="five"> do-while </label><br>
+        <label for="">
+            <input type="radio" name="five"> None of the Above</label><br>
+
+
+        <br>
+        <h4>6. Which of the following is the proper syntax to check if a particular element is present in a list?</h4>
+        <label for="">
+            <input type="radio" name="six"> if ele in list </label><br>
+        <label for="">
+            <input type="radio" name="six"> if no ele not in list </label><br>
+        <label for="">
+            <input type="radio" name="six"> Both </label><br>
+        <label for="">
+            <input type="radio" name="six"> None of the above </label><br>
+
+        <br>
+        <h4>7. Why Java is Partially OOP language?</h4>
+        <label for="">
+            <input type="radio" name="seven"> It allows code to be written outside classes </label><br>
+        <label for="">
+            <input type="radio" name="seven"> It supports usual declaration of primitive data types </label><br>
+        <label for="">
+            <input type="radio" name="seven"> It does not support pointers </label><br>
+        <label for="">
+            <input type="radio" name="seven"> It doesn’t support all types of inheritance </label><br>
+
+        <br>
+        <h4>8. Which of the following functions converts date to corresponding time in Python?</h4>
+        <label for="">
+            <input type="radio" name="eight"> strptime() </label><br>
+        <label for="">
+            <input type="radio" name="eight"> mktime() </label><br>
+        <label for="">
+            <input type="radio" name="eight"> Both </label><br>
+        <label for="">
+            <input type="radio" name="eight"> None of the above </label><br>
+
+        <br>
+        <h4>9. As what datatype are the *args stored, when passed into a function?</h4>
+        <label for="">
+            <input type="radio" name="nine"> List </label><br>
+        <label for="">
+            <input type="radio" name="nine"> Tuple </label><br>
+        <label for="">
+            <input type="radio" name="nine"> Dictionary </label><br>
+        <label for="">
+            <input type="radio" name="nine"> None of the above </label><br>
+
+        <br>
+        <h4>10.
+            As what datatype are the *kwargs stored, when passed into a function?</h4>
+        <label for="">
+            <input type="radio" name="ten"> List </label><br>
+        <label for="">
+            <input type="radio" name="ten"> Tuple </label><br>
+        <label for="">
+            <input type="radio" name="ten"> Dictionary </label><br>
+        <label for="">
+            <input type="radio" name="ten"> None of the above </label><br>
+
+        <center><input style="
+        padding:10px;border-radius: 18px;width: 100px; background-color: purple; color: floralwhite; font-weight: bold;"
+        type="submit" name="submit" id=""></center>
+
+
+    </form>
+</body>
+
+</html>
